@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+    <default>
+        <payment>
+                <djengapayment>
+                <active>1</active>
+                <title>DjengaPayment</title>
+                <order_status>pending_payment</order_status>    
+                <instructions>Instruction.</instructions>
+                <can_use_internal>1</can_use_internal>
+                <sort_order>5</sort_order>
+                <can_use_checkout>1</can_use_checkout>
+                <payment_action>authorize</payment_action>
+                <cctypes>AE,VI,MC,DI,JCB,CUP,DN,MI</cctypes>
+                <model>Equitydjenga\Equitymodule\Model\DjengaPayment</model>
+                <group>offline</group>
+            </djengapayment>
+            <!-- payment-config -->
+        </payment>
+    </default>
+</config>
